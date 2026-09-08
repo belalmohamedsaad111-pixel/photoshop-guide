@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>احترف الفوتوشوب وابدأ العمل الحر</title>
+<meta name="description" content="دليل عربي بالـ PDF يوصلك من صفر خبرة في الفوتوشوب لتوقيع أول عميل فريلانس مدفوع.">
+<style>
+  :root {
+    --bg: #0f1420;
+    --bg-card: #1a2030;
+    --bg-card-2: #171c2a;
+    --text: #f2f0ea;
+    --text-muted: #a8adba;
+    --accent: #f5b833;
+    --border: #2a3142;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: Tahoma, Arial, sans-serif; background: var(--bg); color: var(--text); line-height: 1.7; }
+  .container { max-width: 900px; margin: 0 auto; padding: 0 20px; }
+  header { display: flex; justify-content: space-between; align-items: center; padding: 24px 20px; max-width: 900px; margin: 0 auto; }
+  .brand { font-weight: bold; color: var(--text-muted); font-size: 14px; }
+  .btn-top { background: var(--accent); color: #1a1a1a; font-weight: bold; padding: 10px 20px; border-radius: 8px; text-decoration: none; font-size: 14px; }
+  .hero { padding: 20px 0 50px; text-align: center; }
+  .badge { display: inline-block; background: #2a2416; color: var(--accent); padding: 6px 14px; border-radius: 20px; font-size: 13px; margin-bottom: 20px; }
+  h1 { font-size: 34px; line-height: 1.4; margin-bottom: 18px; }
+  h1 .highlight { color: var(--accent); }
+  .subtitle { color: var(--text-muted); font-size: 17px; max-width: 600px; margin: 0 auto 28px; }
+  .cta { display: inline-block; background: var(--accent); color: #1a1a1a; font-weight: bold; font-size: 18px; padding: 16px 36px; border-radius: 10px; text-decoration: none; margin-bottom: 12px; }
+  .cta-note { color: var(--text-muted); font-size: 13px; }
+  .trust-row { display: flex; justify-content: center; gap: 18px; flex-wrap: wrap; margin-top: 24px; font-size: 13px; color: var(--text-muted); }
+  section { padding: 50px 0; border-top: 1px solid var(--border); }
+  h2 { font-size: 26px; text-align: center; margin-bottom: 32px; }
+  .path-intro { text-align: center; color: var(--text-muted); max-width: 550px; margin: 0 auto 32px; }
+  .path-steps { display: flex; align-items: stretch; justify-content: center; gap: 16px; flex-wrap: wrap; }
+  .path-step { background: var(--bg-card); border-radius: 14px; padding: 26px; max-width: 260px; text-align: center; border: 1px solid var(--border); }
+  .step-number { display: inline-flex; align-items: center; justify-content: center; width: 34px; height: 34px; background: var(--accent); color: #1a1a1a; border-radius: 50%; font-weight: bold; margin-bottom: 14px; }
+  .path-step h3 { font-size: 17px; margin-bottom: 10px; }
+  .path-step p { color: var(--text-muted); font-size: 14px; margin-bottom: 14px; }
+  .step-price { color: var(--accent); font-weight: bold; font-size: 16px; }
+  .path-arrow { display: flex; align-items: center; font-size: 26px; color: var(--accent); }
+  .bundle-offer { text-align: center; margin-top: 36px; padding: 28px; background: #241f13; border-radius: 14px; border: 1px solid #3d331a; max-width: 420px; margin-inline: auto; }
+  .bundle-label { font-weight: bold; margin-bottom: 8px; }
+  .bundle-price { font-size: 26px; font-weight: bold; margin-bottom: 16px; }
+  .old-price { text-decoration: line-through; color: var(--text-muted); font-size: 17px; margin-left: 10px; }
+  .bundle-cta { display: inline-block; background: var(--accent); color: #1a1a1a; font-weight: bold; padding: 12px 28px; border-radius: 8px; text-decoration: none; }
+  .features-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .feature-card { background: var(--bg-card); padding: 22px; border-radius: 12px; }
+  .feature-card h3 { font-size: 16px; margin-bottom: 8px; color: var(--accent); }
+  .feature-card p { color: var(--text-muted); font-size: 14px; }
+  .whom-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 18px; }
+  .whom-card { background: var(--bg-card-2); padding: 22px; border-radius: 12px; text-align: center; }
+  .whom-card h3 { font-size: 16px; margin-bottom: 8px; }
+  .whom-card p { color: var(--text-muted); font-size: 14px; }
+  .details-table { max-width: 500px; margin: 0 auto; }
+  .details-row { display: flex; justify-content: space-between; padding: 14px 0; border-bottom: 1px solid var(--border); font-size: 15px; }
+  .details-row span:first-child { color: var(--text-muted); }
+  .price-card { max-width: 380px; margin: 0 auto; text-align: center; background: var(--bg-card); border: 1px solid var(--border); border-radius: 16px; padding: 32px; }
+  .price-card .amount { font-size: 42px; font-weight: bold; color: var(--accent); margin: 10px 0; }
+  .price-card .note { color: var(--text-muted); font-size: 13px; margin-bottom: 20px; }
+  .faq-item { border-bottom: 1px solid var(--border); padding: 18px 0; }
+  .faq-item h3 { font-size: 16px; margin-bottom: 8px; }
+  .faq-item p { color: var(--text-muted); font-size: 14px; }
+  footer { text-align: center; padding: 40px 20px; color: var(--text-muted); font-size: 13px; }
+  @media (max-width: 640px) { h1 { font-size: 26px; } .path-arrow { transform: rotate(90deg); } }
+</style>
+</head>
+<body>
+<header>
+  <a href="#pricing" class="btn-top">احصل عليه الآن</a>
+  <div class="brand">Belal Ecommerce</div>
+</header>
+<div class="container">
+  <section class="hero" style="border-top:none; padding-top:10px;">
+    <span class="badge">دليل رقمي PDF</span>
+    <h1>من صفر خبرة لأول عميل مدفوع<br>في <span class="highlight">الفوتوشوب</span></h1>
+    <p class="subtitle">دليل عملي بالعربي يوريك بالظبط إزاي تتعلم الأداة، تسعّر شغلك، وتوقّع أول عميل — خطوة بخطوة، بدون لف ودوران.</p>
+    <a href="#pricing" class="cta">ابدأ الآن — 12$ فقط</a>
+    <div class="cta-note">دفعة واحدة · تحميل فوري · ضمان 7 أيام</div>
+    <div class="trust-row">
+      <span>دفع آمن عبر Whop</span>
+      <span>السعر يتكيف مع دولتك</span>
+      <span>وصول فوري بعد الشراء</span>
+      <span>ضمان استرداد 7 أيام</span>
+    </div>
+  </section>
+  <section id="path">
+    <h2>مش منتج واحد.. ده مسار كامل من صفر لأول عميل</h2>
+    <p class="path-intro">الفوتوشوب مهارة، والعمل الحر مهارة تانية. عشان كده الرحلة اتقسمت لمرحلتين مكملين لبعض:</p>
+    <div class="path-steps">
+      <div class="path-step">
+        <span class="step-number">1</span>
+        <h3>خطة الـ8 أسابيع</h3>
+        <p>تتعلم فيها الأداة من الصفر — أسبوع بأسبوع، بمهام عملية وتقييم ذاتي.</p>
+        <span class="step-price">12$</span>
+      </div>
+      <div class="path-arrow">←</div>
+      <div class="path-step">
+        <span class="step-number">2</span>
+        <h3>دليل الاحتراف والعمل الحر</h3>
+        <p>بعد ما تتقن الأداة، الدليل ده يوصلك لتخصصك، بورتفوليوهك، وأول عميل مدفوع.</p>
+        <span class="step-price">15$</span>
+      </div>
+    </div>
+    <div class="bundle-offer">
+      <p class="bundle-label">اشتري الاتنين مع بعض ووفّر</p>
+      <p class="bundle-price"><span class="old-price">27$</span>22$</p>
+      <a href="#pricing" class="bundle-cta">احصل على المسار الكامل — 22$</a>
+    </div>
+  </section>
+
+  <section>
+    <h2>ماذا ستتعلم من الدليل؟</h2>
+    <div class="features-grid">
+      <div class="feature-card"><h3>إتقان المهارة من الصفر</h3><p>أساسيات الفوتوشوب والأدوات والاختصارات التي يستخدمها المحترفون فعليًا في شغلهم اليومي.</p></div>
+      <div class="feature-card"><h3>كل الاختصارات والمصطلحات</h3><p>مرجع شامل يوفّر عليك وقت البحث ويجعلك تشتغل بسرعة أكبر من أول يوم.</p></div>
+      <div class="feature-card"><h3>طرق التسعير وجلب العملاء</h3><p>كيف تحدد سعرك، وتعرض خدماتك، وتجذب أول عميل يدفع لك فعليًا.</p></div>
+      <div class="feature-card"><h3>خطة عمل لسنتك الأولى</h3><p>خطوات عملية مرتبة تساعدك تبني مشروعك كمستقل خطوة بخطوة، بدون تخبط.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>لمين الدليل ده؟</h2>
+    <div class="whom-grid">
+      <div class="whom-card"><h3>مبتدئ في الفوتوشوب</h3><p>ما شغلت البرنامج قبل كده؟ الدليل يبدأ معاك من الصفر بدون تعقيد.</p></div>
+      <div class="whom-card"><h3>عايز تشتغل فريلانس</h3><p>عندك المهارة بس مش عارف تسعّر شغلك ولا تجيب عميل؟ هنا الحل.</p></div>
+      <div class="whom-card"><h3>مصمم بيطوّر نفسه</h3><p>تبحث عن مرجع شامل يجمع الاختصارات والمصطلحات في مكان واحد.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>تفاصيل الدليل</h2>
+    <div class="details-table">
+      <div class="details-row"><span>الصيغة</span><span>PDF قابل للتحميل</span></div>
+      <div class="details-row"><span>التسليم</span><span>فوري بعد إتمام الشراء</span></div>
+      <div class="details-row"><span>اللغة</span><span>العربية</span></div>
+      <div class="details-row"><span>يناسب</span><span>المستقلين والمصممين المبتدئين</span></div>
+    </div>
+  </section>
+
+  <section id="pricing">
+    <h2>احصل على الدليل الآن</h2>
+    <div class="price-card">
+      <div>الدليل الشامل</div>
+      <div class="amount">$12</div>
+      <div class="note">دفعة واحدة، بدون اشتراك</div>
+      <a href="#" class="cta" style="display:block;">احصل على الدليل الآن</a>
+      <div class="cta-note" style="margin-top:10px;">صفحة دفع آمنة · ضمان استرداد 7 أيام</div>
+    </div>
+  </section>
+
+  <section>
+    <h2>أسئلة شائعة</h2>
+    <div class="faq-item"><h3>هل أحتاج خبرة سابقة في التصميم؟</h3><p>لا. الدليل مكتوب ليبدأ معك من الأساسيات ويوصلك خطوة بخطوة لاحتراف الأداة.</p></div>
+    <div class="faq-item"><h3>متى أستلم الدليل بعد الدفع؟</h3><p>فورًا. رابط تحميل الملف بصيغة PDF يصلك مباشرة بعد إتمام عملية الشراء.</p></div>
+    <div class="faq-item"><h3>هل الدفع آمن ويدعم مصر؟</h3><p>نعم، الدفع يتم عبر Whop بشكل آمن، ويدعم وسائل دفع محلية ودولية متعددة.</p></div>
+    <div class="faq-item"><h3>إيه الفرق بين خطة الـ8 أسابيع والدليل الشامل؟</h3><p>الخطة بتعلمك استخدام فوتوشوب من الصفر. الدليل بيبدأ من بعد كده — يوريك تختار تخصصك إزاي، تسعّر شغلك، وتوقّع أول عميل مدفوع. لو لسه مبتدئ، ابدأ بالخطة الأول.</p></div>
+    <div class="faq-item"><h3>هل الدليل هيفرق مع الشرح المجاني على يوتيوب؟</h3><p>يوتيوب فيه معلومات مبعثرة بتاخد وقت تجمعها وتفهم أولوياتها. الدليل ده مرتب بترتيب منطقي: مهارة ثم تسعير ثم عميل، وبيوفر عليك أسابيع من البحث العشوائي.</p></div>
+    <div class="faq-item"><h3>لو الدليل مش مناسب ليا، أقدر أسترد فلوسي؟</h3><p>نعم. خلال 7 أيام من الشراء تقدر تطلب استرداد كامل لو الدليل مش مناسب لك.</p></div>
+  </section>
+
+</div>
+
+<footer>
+  Belal Ecommerce - Payments by Whop
+</footer>
+
+</body>
+</html>
